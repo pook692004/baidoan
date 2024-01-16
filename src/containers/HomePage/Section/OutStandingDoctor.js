@@ -68,17 +68,6 @@ class OutStandingDoctor extends Component {
                                     <div>Giáo sư,Tiến sĩ</div>
                                     <div>Cơ xương khớp 5</div>
                                 </div>
-                                <div className='section-customize'>
-                                    <div className='customize-border'>
-                                        <div className='outer-bg'>
-                                            <div className='bg-image section-outstanding-doctor' />
-                                        </div>
-                                    </div>
-                                    <div className='position text-center'>
-                                        <div>Giáo sư,Tiến sĩ</div>
-                                        <div>Cơ xương khớp 6</div>
-                                    </div>
-                                </div>
                             </div>
                             <div className='section-customize'>
                                 <div className='customize-border'>
@@ -88,18 +77,7 @@ class OutStandingDoctor extends Component {
                                 </div>
                                 <div className='position text-center'>
                                     <div>Giáo sư,Tiến sĩ</div>
-                                    <div>Cơ xương khớp</div>
-                                </div>
-                            </div>
-                            <div className='section-customize'>
-                                <div className='customize-border'>
-                                    <div className='outer-bg'>
-                                        <div className='bg-image section-outstanding-doctor' />
-                                    </div>
-                                </div>
-                                <div className='position text-center'>
-                                    <div>Giáo sư,Tiến sĩ</div>
-                                    <div>Cơ xương khớp</div>
+                                    <div>Cơ xương khớp 6</div>
                                 </div>
                             </div>
                         </Slider>
