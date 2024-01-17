@@ -17,12 +17,17 @@ const persistCommonConfig = {
 const userPersistConfig = {
     ...persistCommonConfig,
     key: 'user',
-    whitelist: ['isLoggedIn', 'userInfo', 'language']
+    whitelist: ['isLoggedIn', 'userInfo',]
 };
+const appPersistConfig = {
+    ...persistCommonConfig,
+    key: 'app',
+    whitelist: ['language'] // tên những biến redux muốn lưu lại ví dụ khi chọn EN -> load trang lại thì vẫn giữ EN
+}
 
 export default (history) => combineReducers({
     router: connectRouter(history),
     user: persistReducer(userPersistConfig, userReducer),
 
-    app: appReducer
+    app: persistReducer(appPersistConfig, appReducer),
 })
