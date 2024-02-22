@@ -19,17 +19,14 @@
 }
 
 #customers th {
-    font-weight: normal;
     padding-top: 12px;
     padding-bottom: 12px;
-    background-color: white;
-    color: black;
-}
-
-#customers tr.highlighted th {
     background-color: #04AA6D;
     color: white;
+    text-align: left;
 }
+
+
 
 .btn-edit {
     width: 50px;

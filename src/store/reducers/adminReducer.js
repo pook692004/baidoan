@@ -4,7 +4,10 @@ const initialState = {
     isLoadingGender: false,
     gender: [],
     roles: [],
-    positions: []
+    positions: [],
+    users: [],
+    topDoctors: [],
+    allDoctors: [],
 }
 
 const adminReducer = (state = initialState, action) => {
@@ -21,7 +24,7 @@ const adminReducer = (state = initialState, action) => {
             return {
                 ...state,
             }
-        case actionTypes.FETCH_GENDER_FAIDED:
+        case actionTypes.FETCH_GENDER_FAILDED:
             state.isLoadingGender = false;
             state.genders = [];
             return {
@@ -34,7 +37,7 @@ const adminReducer = (state = initialState, action) => {
             return {
                 ...state,
             }
-        case actionTypes.FETCH_POSITION_FAIDED:
+        case actionTypes.FETCH_POSITION_FAILDED:
             state.positions = [];
             return {
                 ...state,
@@ -45,8 +48,38 @@ const adminReducer = (state = initialState, action) => {
             return {
                 ...state,
             }
-        case actionTypes.FETCH_ROLE_FAIDED:
+        case actionTypes.FETCH_ROLE_FAILDED:
             state.roles = [];
+            return {
+                ...state,
+            }
+        case actionTypes.FETCH_ALL_USERS_SUCCESS:
+            state.users = action.users;
+            return {
+                ...state,
+            }
+        case actionTypes.FETCH_ALL_USERS_FAILDED:
+            state.users = [];
+            return {
+                ...state,
+            }
+        case actionTypes.FETCH_TOP_DOCTORS_SUCCESS:
+            state.topDoctors = action.dataDoctors;
+            return {
+                ...state,
+            }
+        case actionTypes.FETCH_TOP_DOCTORS_FAILDED:
+            state.topDoctors = [];
+            return {
+                ...state,
+            }
+        case actionTypes.FETCH_ALL_DOCTORS_SUCCESS:
+            state.allDoctors = action.dataDr;
+            return {
+                ...state,
+            }
+        case actionTypes.FETCH_ALL_DOCTORS_FAILDED:
+            state.allDoctors = [];
             return {
                 ...state,
             }

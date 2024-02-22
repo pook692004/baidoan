@@ -26,7 +26,8 @@ class ModalEditUser extends Component {
                 password: 'harcode',
                 firstName: user.firstName,
                 lastName: user.lastName,
-                address: user.address
+                address: user.address,
+                
             })
         }
         console.log('didmount edit modal', this.props.currentUser)
