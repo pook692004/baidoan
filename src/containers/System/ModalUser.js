@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
-import { Modal, ModalBody, ModalFooter, ModalHeader, button } from 'reactstrap';
+import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 import { emitter } from "../../utils/emitter";
 class ModalUser extends Component {
 
@@ -72,7 +72,7 @@ class ModalUser extends Component {
     }
 
     render() {
-       
+
         return (
             <Modal isOpen={this.props.isOpen} toggle={() => { this.toggle() }} className={'modal-user-container'}
                 size='lg'
