@@ -21,16 +21,7 @@ class DefaultClass extends Component {
         }
 
     }
-
-    showHideDetailInfor = (status) => {
-        this.setState({
-            isShowDetailInfor: status
-        })
-    }
-
     render() {
-        let { isShowDetailInfor, extraInfor } = this.state
-        let { language } = this.props
         return (
             <div></div>
         )

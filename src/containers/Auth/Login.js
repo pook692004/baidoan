@@ -79,7 +79,7 @@ class Login extends Component {
                 <div className='login-container'>
                     <div className='login-content row'>
                         <div className='col-12 text-login'>Login</div>
-                        <div className='coil-12 form-group login-input'>
+                        <div className='col-12 form-group login-input'>
                             <label>Username:</label>
                             <input type='text' className='form-control' placeholder='Enter your username' value={this.state.username}
                                 onChange={(event) => this.handleOnChangeUsername(event)}></input>
