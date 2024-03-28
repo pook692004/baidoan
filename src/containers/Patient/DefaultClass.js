@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from "react-redux";
-
 import { FormattedMessage } from 'react-intl';
 import NumberFormat from 'react-number-format'
 class DefaultClass extends Component {
